@@ -1,0 +1,424 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif !important;
+  color: #3C3C3F;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.pl-1{
+  padding-left: 1rem;
+}
+
+.grey-1{
+  color: #888888;
+}
+
+.grey-2{
+  color: #838EAB;
+}
+
+.black-1{
+  color: #3C3C3F;
+}
+
+.green-1{
+  color: #74B71B;
+}
+
+.green-2{
+  color: #006A4E;
+}
+
+.red-1{
+  color: #E64580;
+}
+
+.text-0{
+  font-size: 1.5rem !important;
+}
+
+.text-1{
+  font-size: 1.0625rem !important;
+}
+
+.text-2{
+  font-size: 1rem !important;
+}
+
+.text-3{
+  font-size: 0.875rem !important;
+}
+
+.text-4{
+  font-size: 0.75rem !important;
+}
+
+.filter-checkbox{
+  appearance: none !important;
+  width: 15px !important;
+  height: 22px !important;
+  border: 2px solid #999 !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  cursor: pointer !important;
+  margin: 0 !important  ;
+}
+
+.filter-checkbox:checked {
+  background-color: grey;
+  outline: none;
+}
+
+.filter-checkbox:hover {
+  background-color: lightgrey;
+}
+
+.h-fit-content{
+  height: fit-content;
+}
+
+.min-w-9{
+  width: 9rem !important;
+}
+
+.width-full{
+  width: 100% !important;
+}
+
+.pb-10rem {
+  padding-bottom: 10rem;
+}
+
+.right-0{
+  right: 0;
+}
+
+.hotItem{
+  right: -4px;
+  top:-6px
+}
+
+.bestSeller{
+  right: -6px;
+  top:-7px
+}
+
+.newItem{
+  right: 0px;
+  top:-1px
+}
+
+
+.card-img-item{
+  width: 100%;
+  max-width: 250px;
+  max-height: 365px;
+  min-height: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* star */
+.rating {
+  font-size: 0.75rem;
+}
+
+.rating i {
+  margin-right: 0px; 
+  color: gold; 
+}
+
+.rating-detail {
+  font-size: 1.2rem;
+  padding: 0 !important;
+}
+
+.rating-detail i {
+  margin-right: 5px; 
+  color: gold; 
+}
+
+.icon-wishlist{
+  max-width: 54px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* box soldout */
+.box-soldout{
+  opacity: 0.43 !important;
+}
+
+/* card hover */
+.card-col {
+  position: relative;
+}
+
+.card-list {
+  transition: transform 0.1s;
+}
+
+.card-col:hover .card-list {
+  transform: translateY(-10px);
+}
+
+.card-overlay {
+  border-radius: 5px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 96%;
+  height: 100%;
+  background: linear-gradient(135deg, #74B71B, #649C1A);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s;
+}
+
+.card-col:hover .card-overlay {
+  opacity: 0.82;
+}
+
+.detail-button {
+  width: 70%;
+  position: absolute;
+  text-align: center;
+  bottom: 10rem;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 100vh;
+  cursor: pointer;
+}
+
+.wishlist-none{
+  width: 90%;
+  padding: 3px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #888888;
+  border: 1px solid #888888;
+  border-radius: 100vh;
+}
+
+.wishlist-red{
+  width: 90%;
+  padding: 3px;
+  font-size: 20px;
+  background-color: #E64580;
+  color: white;
+  border: 1px solid #E64580;
+  border-radius: 100vh;
+}
+
+.wishlist-overlay{
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 18%;
+  z-index: 10;
+}
+
+.wishlist-detail{
+  width: 50%;
+  font-size: 15px;
+  padding: 7px;
+}
+
+.redeem{
+  padding: 7px;
+  font-size: 15px;
+  background-color: #006A4E;
+  color: white;
+  border: 1px solid #006A4E;
+  border-radius: 100vh;
+  width: 70%;
+}
+
+.addToCart{
+  padding: 7px;
+  font-size: 15px;
+  background-color: white;
+  color: #74B71B;
+  border: 1px solid #74B71B;
+  border-radius: 100vh;
+  width: 90%;
+}
+
+.card-col:hover .hover-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.text-stock-overlay{
+  top: 1.5rem;
+  left: 1rem;
+}
+
+/* detail */
+.info-detail{
+  padding: 0 !important;
+  text-align: justify;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.input-number{
+  width: 7% !important;
+  flex: none !important;
+  border:none !important;
+  font-weight: bold !important;
+  font-size: 1.2rem;
+  color: #525F7F !important;
+}
+
+.nav-produk{
+  padding: 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid #70707031 !important;
+}
+
+.info-produk{
+  border-bottom: 3px solid #74B71B !important;
+  width: 10rem !important;
+  display: block !important;
+  color: #74B71B;
+}
+
+.custom-background {
+  background-image: url("/src/assets/batik-bg.png"); /* Ganti dengan URL gambar yang diinginkan */
+  background-size: cover;
+  background-position: center;
+}
+
+.text-rincian{
+  line-height: 3 !important;
+}
+
+.col-filter{
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+}
+
+.container-detail{
+  padding: 2rem !important;
+}
+
+.scroll-top{
+  background: #969393db;
+  border: none;
+}
+
+.scroll-top:hover{
+  background: #888888;
+}
+
+.btn-scroll-show{
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.btn-scroll-hide{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .card-img-item{
+    max-width: fit-content !important;
+  }
+  .input-number{
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 1336px) {
+  .card-body {
+      padding: 10px;
+  }
+  .text-break {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+}
+@media (min-width: 1500px) {
+  .card-img-item{
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .card-img-item{
+    padding-right: 0.75rem !important;
+    padding-left: 0.75rem !important;
+  }
+}
+
+@media (max-width: 1110px) {
+  .card-img-item{
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }
+
+  .input-number{
+    width: 10% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+      width: 100%;
+      max-width: 100%;
+  }
+  .text-break {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+
+  .input-number{
+    width: 13% !important;
+  }
+}
+
+@media  only screen and (min-width: 768px) and (max-device-width: 991px) {
+  .redeem{
+    font-size: 12px;
+  }
+  .addToCart{
+    font-size: 12px;
+  }
+  .wishlist-detail{
+    font-size: 12px;
+  }
+}
+
+@media  only screen and (min-width: 991px) and (max-device-width: 1300px) {
+  .card-col {
+      flex: 0 0 50% !important;
+      max-width: 50% !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .col-filter{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+}
